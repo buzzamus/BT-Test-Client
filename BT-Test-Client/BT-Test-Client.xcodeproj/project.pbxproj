@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		08BA813E303F2BFA00FCEB3A /* BraintreeCard in Frameworks */ = {isa = PBXBuildFile; productRef = 08BA813D303F2BFA00FCEB3A /* BraintreeCard */; };
+		08BA8140303F2BFA00FCEB3A /* BraintreeDataCollector in Frameworks */ = {isa = PBXBuildFile; productRef = 08BA813F303F2BFA00FCEB3A /* BraintreeDataCollector */; };
+		08BA8142303F2BFA00FCEB3A /* BraintreePayPal in Frameworks */ = {isa = PBXBuildFile; productRef = 08BA8141303F2BFA00FCEB3A /* BraintreePayPal */; };
+		08BA8144303F2BFA00FCEB3A /* BraintreeThreeDSecure in Frameworks */ = {isa = PBXBuildFile; productRef = 08BA8143303F2BFA00FCEB3A /* BraintreeThreeDSecure */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		118C7BAA2E8DD6660051DACA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08BA8144303F2BFA00FCEB3A /* BraintreeThreeDSecure in Frameworks */,
+				08BA813E303F2BFA00FCEB3A /* BraintreeCard in Frameworks */,
+				08BA8140303F2BFA00FCEB3A /* BraintreeDataCollector in Frameworks */,
+				08BA8142303F2BFA00FCEB3A /* BraintreePayPal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +123,10 @@
 			);
 			name = "BT-Test-Client";
 			packageProductDependencies = (
+				08BA813D303F2BFA00FCEB3A /* BraintreeCard */,
+				08BA813F303F2BFA00FCEB3A /* BraintreeDataCollector */,
+				08BA8141303F2BFA00FCEB3A /* BraintreePayPal */,
+				08BA8143303F2BFA00FCEB3A /* BraintreeThreeDSecure */,
 			);
 			productName = "BT-Test-Client";
 			productReference = 118C7B9C2E8DD6650051DACA /* BT-Test-Client.app */;
@@ -195,6 +210,9 @@
 			);
 			mainGroup = 118C7B932E8DD6650051DACA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 118C7B9D2E8DD6650051DACA /* Products */;
 			projectDirPath = "";
@@ -558,6 +576,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/braintree/braintree_ios";
+			requirement = {
+				kind = revision;
+				revision = 53196f631ae9c736a3cde5e3e7b4ebd7b1a98575;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08BA813D303F2BFA00FCEB3A /* BraintreeCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */;
+			productName = BraintreeCard;
+		};
+		08BA813F303F2BFA00FCEB3A /* BraintreeDataCollector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */;
+			productName = BraintreeDataCollector;
+		};
+		08BA8141303F2BFA00FCEB3A /* BraintreePayPal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */;
+			productName = BraintreePayPal;
+		};
+		08BA8143303F2BFA00FCEB3A /* BraintreeThreeDSecure */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */;
+			productName = BraintreeThreeDSecure;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 118C7B942E8DD6650051DACA /* Project object */;
 }

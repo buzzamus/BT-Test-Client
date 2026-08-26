@@ -1,0 +1,23 @@
+{
+  "originHash" : "5fcd2baf31dcfefecdfcb323d71a1303c229ea8b10c7775534077991e5c27b93",
+  "pins" : [
+    {
+      "identity" : "braintree_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/braintree/braintree_ios",
+      "state" : {
+        "revision" : "53196f631ae9c736a3cde5e3e7b4ebd7b1a98575"
+      }
+    },
+    {
+      "identity" : "paypal-risk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/paypal/paypal-risk-ios.git",
+      "state" : {
+        "revision" : "b13db1eaa8c32c34486f5edd773a8127d514ff63",
+        "version" : "5.6.0-beta2"
+      }
+    }
+  ],
+  "version" : 3
+}
