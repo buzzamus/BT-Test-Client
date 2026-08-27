@@ -1,0 +1,18 @@
+PODS:
+  - Braintree/Core (7.9.0)
+  - Braintree/DataCollector (7.9.0):
+    - Braintree/Core
+
+DEPENDENCIES:
+  - Braintree/DataCollector (= 7.9.0)
+
+SPEC REPOS:
+  trunk:
+    - Braintree
+
+SPEC CHECKSUMS:
+  Braintree: 7faff0834394bc38d9d1f20b9cab4be29878fd46
+
+PODFILE CHECKSUM: f5277eb857a5f14c0683843932d9765d01d5ea81
+
+COCOAPODS: 1.16.2

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import BraintreeDataCollector
+import Braintree
 
 struct ContentView: View {
     let client = BTDataCollector(authorization: "sandbox_d54x7ckf_hh4cpc39zq4rgjcg")

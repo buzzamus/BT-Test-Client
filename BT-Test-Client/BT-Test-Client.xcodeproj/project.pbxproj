@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08BA813E303F2BFA00FCEB3A /* BraintreeCard in Frameworks */ = {isa = PBXBuildFile; productRef = 08BA813D303F2BFA00FCEB3A /* BraintreeCard */; };
-		08BA8140303F2BFA00FCEB3A /* BraintreeDataCollector in Frameworks */ = {isa = PBXBuildFile; productRef = 08BA813F303F2BFA00FCEB3A /* BraintreeDataCollector */; };
-		08BA8142303F2BFA00FCEB3A /* BraintreePayPal in Frameworks */ = {isa = PBXBuildFile; productRef = 08BA8141303F2BFA00FCEB3A /* BraintreePayPal */; };
-		08BA8144303F2BFA00FCEB3A /* BraintreeThreeDSecure in Frameworks */ = {isa = PBXBuildFile; productRef = 08BA8143303F2BFA00FCEB3A /* BraintreeThreeDSecure */; };
+		99EAF57A33D59009DDA8B8D7 /* Pods_BT_Test_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282B48B9904828A1A6B8433C /* Pods_BT_Test_Client.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,21 +31,30 @@
 		118C7B9C2E8DD6650051DACA /* BT-Test-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BT-Test-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118C7BA92E8DD6660051DACA /* BT-Test-ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BT-Test-ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118C7BB32E8DD6660051DACA /* BT-Test-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BT-Test-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		282B48B9904828A1A6B8433C /* Pods_BT_Test_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BT_Test_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC011D6000807086DE3C3CD /* Pods-BT-Test-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BT-Test-Client.release.xcconfig"; path = "Target Support Files/Pods-BT-Test-Client/Pods-BT-Test-Client.release.xcconfig"; sourceTree = "<group>"; };
+		A74CC514AD3120D10043CB15 /* Pods-BT-Test-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BT-Test-Client.debug.xcconfig"; path = "Target Support Files/Pods-BT-Test-Client/Pods-BT-Test-Client.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		118C7B9E2E8DD6650051DACA /* BT-Test-Client */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "BT-Test-Client";
 			sourceTree = "<group>";
 		};
 		118C7BAC2E8DD6660051DACA /* BT-Test-ClientTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "BT-Test-ClientTests";
 			sourceTree = "<group>";
 		};
 		118C7BB62E8DD6660051DACA /* BT-Test-ClientUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "BT-Test-ClientUITests";
 			sourceTree = "<group>";
 		};
@@ -59,10 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08BA8144303F2BFA00FCEB3A /* BraintreeThreeDSecure in Frameworks */,
-				08BA813E303F2BFA00FCEB3A /* BraintreeCard in Frameworks */,
-				08BA8140303F2BFA00FCEB3A /* BraintreeDataCollector in Frameworks */,
-				08BA8142303F2BFA00FCEB3A /* BraintreePayPal in Frameworks */,
+				99EAF57A33D59009DDA8B8D7 /* Pods_BT_Test_Client.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +93,8 @@
 				118C7BAC2E8DD6660051DACA /* BT-Test-ClientTests */,
 				118C7BB62E8DD6660051DACA /* BT-Test-ClientUITests */,
 				118C7B9D2E8DD6650051DACA /* Products */,
+				932D9C6D8057CC1CA5917DE0 /* Pods */,
+				9A17FA37A2776F1043C80139 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +108,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		932D9C6D8057CC1CA5917DE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A74CC514AD3120D10043CB15 /* Pods-BT-Test-Client.debug.xcconfig */,
+				3BC011D6000807086DE3C3CD /* Pods-BT-Test-Client.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		9A17FA37A2776F1043C80139 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				282B48B9904828A1A6B8433C /* Pods_BT_Test_Client.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 118C7BBD2E8DD6660051DACA /* Build configuration list for PBXNativeTarget "BT-Test-Client" */;
 			buildPhases = (
+				4D7D517870E8A5DE1219D632 /* [CP] Check Pods Manifest.lock */,
 				118C7B982E8DD6650051DACA /* Sources */,
 				118C7B992E8DD6650051DACA /* Frameworks */,
 				118C7B9A2E8DD6650051DACA /* Resources */,
+				32C61ECB05E47833738F4390 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,12 +147,6 @@
 				118C7B9E2E8DD6650051DACA /* BT-Test-Client */,
 			);
 			name = "BT-Test-Client";
-			packageProductDependencies = (
-				08BA813D303F2BFA00FCEB3A /* BraintreeCard */,
-				08BA813F303F2BFA00FCEB3A /* BraintreeDataCollector */,
-				08BA8141303F2BFA00FCEB3A /* BraintreePayPal */,
-				08BA8143303F2BFA00FCEB3A /* BraintreeThreeDSecure */,
-			);
 			productName = "BT-Test-Client";
 			productReference = 118C7B9C2E8DD6650051DACA /* BT-Test-Client.app */;
 			productType = "com.apple.product-type.application";
@@ -149,8 +168,6 @@
 				118C7BAC2E8DD6660051DACA /* BT-Test-ClientTests */,
 			);
 			name = "BT-Test-ClientTests";
-			packageProductDependencies = (
-			);
 			productName = "BT-Test-ClientTests";
 			productReference = 118C7BA92E8DD6660051DACA /* BT-Test-ClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -172,8 +189,6 @@
 				118C7BB62E8DD6660051DACA /* BT-Test-ClientUITests */,
 			);
 			name = "BT-Test-ClientUITests";
-			packageProductDependencies = (
-			);
 			productName = "BT-Test-ClientUITests";
 			productReference = 118C7BB32E8DD6660051DACA /* BT-Test-ClientUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -210,9 +225,6 @@
 			);
 			mainGroup = 118C7B932E8DD6650051DACA;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */,
-			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 118C7B9D2E8DD6650051DACA /* Products */;
 			projectDirPath = "";
@@ -248,6 +260,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32C61ECB05E47833738F4390 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BT-Test-Client/Pods-BT-Test-Client-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BT-Test-Client/Pods-BT-Test-Client-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BT-Test-Client/Pods-BT-Test-Client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D7D517870E8A5DE1219D632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BT-Test-Client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		118C7B982E8DD6650051DACA /* Sources */ = {
@@ -410,6 +464,7 @@
 		};
 		118C7BBE2E8DD6660051DACA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74CC514AD3120D10043CB15 /* Pods-BT-Test-Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,6 +493,7 @@
 		};
 		118C7BBF2E8DD6660051DACA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BC011D6000807086DE3C3CD /* Pods-BT-Test-Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -576,40 +632,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/braintree/braintree_ios";
-			requirement = {
-				kind = exactVersion;
-				version = 7.9.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		08BA813D303F2BFA00FCEB3A /* BraintreeCard */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */;
-			productName = BraintreeCard;
-		};
-		08BA813F303F2BFA00FCEB3A /* BraintreeDataCollector */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */;
-			productName = BraintreeDataCollector;
-		};
-		08BA8141303F2BFA00FCEB3A /* BraintreePayPal */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */;
-			productName = BraintreePayPal;
-		};
-		08BA8143303F2BFA00FCEB3A /* BraintreeThreeDSecure */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 08BA813C303F2BFA00FCEB3A /* XCRemoteSwiftPackageReference "braintree_ios" */;
-			productName = BraintreeThreeDSecure;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 118C7B942E8DD6650051DACA /* Project object */;
 }
