@@ -583,7 +583,7 @@
 			repositoryURL = "https://github.com/braintree/braintree_ios";
 			requirement = {
 				kind = exactVersion;
-				version = 7.3.0;
+				version = 7.9.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
