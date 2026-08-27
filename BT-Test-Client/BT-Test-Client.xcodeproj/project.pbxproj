@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99EAF57A33D59009DDA8B8D7 /* Pods_BT_Test_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282B48B9904828A1A6B8433C /* Pods_BT_Test_Client.framework */; };
+		0C710A724B56427CAC2C8ADD /* BraintreeCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2528F1C87B6C45D799BB9F6C /* BraintreeCore.xcframework */; };
+		BB06F9CF862647909BCA7760 /* BraintreeDataCollector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6E77C7FAC945F590226663 /* BraintreeDataCollector.xcframework */; };
+		3BA9A1B2F6EE4B6287BF71FC /* PPRiskMagnes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3DEBD995D24CDA977BCF2B /* PPRiskMagnes.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +33,9 @@
 		118C7B9C2E8DD6650051DACA /* BT-Test-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BT-Test-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118C7BA92E8DD6660051DACA /* BT-Test-ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BT-Test-ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		118C7BB32E8DD6660051DACA /* BT-Test-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BT-Test-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		282B48B9904828A1A6B8433C /* Pods_BT_Test_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BT_Test_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BC011D6000807086DE3C3CD /* Pods-BT-Test-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BT-Test-Client.release.xcconfig"; path = "Target Support Files/Pods-BT-Test-Client/Pods-BT-Test-Client.release.xcconfig"; sourceTree = "<group>"; };
-		A74CC514AD3120D10043CB15 /* Pods-BT-Test-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BT-Test-Client.debug.xcconfig"; path = "Target Support Files/Pods-BT-Test-Client/Pods-BT-Test-Client.debug.xcconfig"; sourceTree = "<group>"; };
+		2528F1C87B6C45D799BB9F6C /* BraintreeCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "BraintreeCore.xcframework"; path = "../Carthage/Build/BraintreeCore.xcframework"; sourceTree = "<group>"; };
+		DF6E77C7FAC945F590226663 /* BraintreeDataCollector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "BraintreeDataCollector.xcframework"; path = "../Carthage/Build/BraintreeDataCollector.xcframework"; sourceTree = "<group>"; };
+		4D3DEBD995D24CDA977BCF2B /* PPRiskMagnes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "PPRiskMagnes.xcframework"; path = "../Carthage/Build/PPRiskMagnes.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -65,7 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99EAF57A33D59009DDA8B8D7 /* Pods_BT_Test_Client.framework in Frameworks */,
+				0C710A724B56427CAC2C8ADD /* BraintreeCore.xcframework in Frameworks */,
+				BB06F9CF862647909BCA7760 /* BraintreeDataCollector.xcframework in Frameworks */,
+				3BA9A1B2F6EE4B6287BF71FC /* PPRiskMagnes.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,9 +97,18 @@
 				118C7BAC2E8DD6660051DACA /* BT-Test-ClientTests */,
 				118C7BB62E8DD6660051DACA /* BT-Test-ClientUITests */,
 				118C7B9D2E8DD6650051DACA /* Products */,
-				932D9C6D8057CC1CA5917DE0 /* Pods */,
-				9A17FA37A2776F1043C80139 /* Frameworks */,
+				A9E432BB97C643338A667944 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		A9E432BB97C643338A667944 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2528F1C87B6C45D799BB9F6C /* BraintreeCore.xcframework */,
+				DF6E77C7FAC945F590226663 /* BraintreeDataCollector.xcframework */,
+				4D3DEBD995D24CDA977BCF2B /* PPRiskMagnes.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		118C7B9D2E8DD6650051DACA /* Products */ = {
@@ -108,24 +121,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		932D9C6D8057CC1CA5917DE0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A74CC514AD3120D10043CB15 /* Pods-BT-Test-Client.debug.xcconfig */,
-				3BC011D6000807086DE3C3CD /* Pods-BT-Test-Client.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
-		9A17FA37A2776F1043C80139 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				282B48B9904828A1A6B8433C /* Pods_BT_Test_Client.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,11 +128,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 118C7BBD2E8DD6660051DACA /* Build configuration list for PBXNativeTarget "BT-Test-Client" */;
 			buildPhases = (
-				4D7D517870E8A5DE1219D632 /* [CP] Check Pods Manifest.lock */,
 				118C7B982E8DD6650051DACA /* Sources */,
 				118C7B992E8DD6650051DACA /* Frameworks */,
 				118C7B9A2E8DD6650051DACA /* Resources */,
-				32C61ECB05E47833738F4390 /* [CP] Embed Pods Frameworks */,
+				D7CE3FEDAE234BA2AE19A573 /* Carthage copy-frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +188,31 @@
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7CE3FEDAE234BA2AE19A573 /* Carthage copy-frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/BraintreeCore.xcframework",
+				"$(SRCROOT)/../Carthage/Build/BraintreeDataCollector.xcframework",
+			);
+			name = "Carthage copy-frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BraintreeCore.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BraintreeDataCollector.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which carthage > /dev/null; then\n  carthage copy-frameworks\nelif [ -f /opt/homebrew/bin/carthage ]; then\n  /opt/homebrew/bin/carthage copy-frameworks\nelif [ -f /usr/local/bin/carthage ]; then\n  /usr/local/bin/carthage copy-frameworks\nelse\n  echo \"error: Carthage not installed\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXProject section */
 		118C7B942E8DD6650051DACA /* Project object */ = {
@@ -260,48 +279,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		32C61ECB05E47833738F4390 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BT-Test-Client/Pods-BT-Test-Client-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BT-Test-Client/Pods-BT-Test-Client-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BT-Test-Client/Pods-BT-Test-Client-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4D7D517870E8A5DE1219D632 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BT-Test-Client-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		118C7B982E8DD6650051DACA /* Sources */ = {
@@ -464,7 +441,6 @@
 		};
 		118C7BBE2E8DD6660051DACA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A74CC514AD3120D10043CB15 /* Pods-BT-Test-Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +448,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GP2V62MZ3S;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../Carthage/Build",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -493,7 +473,6 @@
 		};
 		118C7BBF2E8DD6660051DACA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BC011D6000807086DE3C3CD /* Pods-BT-Test-Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,6 +480,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GP2V62MZ3S;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../Carthage/Build",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
